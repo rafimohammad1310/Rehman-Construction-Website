@@ -1,11 +1,7 @@
-/*globals*/
-.container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .heading {
-    font-size: 24px;
-    color: #333;
-  }
-  
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  scroll-behavior: smooth;
+}

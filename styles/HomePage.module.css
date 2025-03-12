@@ -391,10 +391,7 @@ body{
   align-items: center;
   margin-top: 30px;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-}
+
 .searchForm input {
   padding: 15px 25px;
   width: 350px;

@@ -7,11 +7,6 @@
   letter-spacing: 1px;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 .aboutSection {
   padding: 3rem 2rem;
   max-width: 1200px;
