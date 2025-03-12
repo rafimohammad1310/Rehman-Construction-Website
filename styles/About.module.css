@@ -1,0 +1,194 @@
+
+.aboutSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2980b9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.aboutSection {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.aboutHeader {
+   /* Soft neutral background */
+  padding: 1rem 2rem;
+  color: #2c3e50;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 4rem;
+}
+
+.aboutHeader h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #2980b9; /* Soft blue */
+}
+
+.aboutHeader p {
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.aboutHeader p strong {
+  color: #3498db;
+}
+
+.cta {
+  margin-top: 3rem;
+  background: #f1c40f;
+  padding:2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.zigzag {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.contentLeft, .contentRight {
+  flex: 1;
+  padding: 1rem;
+}
+
+.contentLeft {
+  order: 1;
+}
+
+.contentRight {
+  order: 2;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.aboutSection ul {
+  list-style-type: circle;
+  margin-left: 2rem ;
+}
+
+.aboutSection ul li {
+  font-size: 1.25rem;
+  color: #34495e;
+  margin: 10px .5px;
+}
+
+.aboutSection blockquote {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background: #ecf0f1;
+  border-left: 4px solid #3498db;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.aboutSection blockquote em {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.futureVision {
+  margin-top: 3rem;
+  background: #dff9fb;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.mission {
+  margin-top: 3rem;
+  background: #dff9fb;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2980b9;
+}
+
+.mission p {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2980b9;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.contactButton {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactButton:hover {
+  background: #2980b9;
+}
+.cta {
+  margin-top: 3rem;
+  background: #f1c40f;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.services h2,
+.achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2980b9;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}
+
+.services p,
+.achievements p {
+  font-size: 1.25rem; /* Increased font size */
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.services ul li,
+.achievements ul li {
+  font-size: 1.25rem; /* Increased font size */
+  color: #34495e;
+  margin: 0.5rem 0;
+}
+
+.services ul, .achievements ul {
+  list-style-type: circle;
+  margin-left: 2rem;
+}

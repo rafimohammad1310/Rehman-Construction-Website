@@ -1,0 +1,146 @@
+/* ContactForm.module.css */
+.contactPageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes up at least full height */
+}
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.contactInfo {
+  width: 45%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+
+.contactInfo h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contactInfo p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contactInfo h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Map styling */
+.mapContainer iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Styling for the contact form section */
+.contactform {
+  width: 45%; /* Keep it 48% so it fits beside the map */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+}
+
+.contactform h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 95%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #4CAF50;
+  background-color: #fff;
+}
+
+.inputGroup textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Button Styling */
+.contactform button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contactform button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.contactform button:active {
+  background-color: #3e8e41;
+}
+
+.contactform button:focus {
+  outline: none;
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactInfo,
+  .contactform {
+    width: 90%;
+  }
+}
+.footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}

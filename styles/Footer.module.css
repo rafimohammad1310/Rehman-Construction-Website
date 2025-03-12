@@ -1,0 +1,135 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: #030303;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.upperFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color:white;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 10px;
+}
+
+.column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.column ul li a:hover {
+  color: #0da0f5;
+}
+
+.column p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.column p a {
+  color: white;
+  text-decoration: none;
+}
+
+.column p a:hover {
+  text-decoration: underline;
+}
+
+.socialMedia {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.socialMedia h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.socialMedia ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socialMedia ul li a {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.socialMedia ul li a:hover {
+  color: #fcfbfb;
+}
+
+.logoSection {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logoSection img {
+  max-width: 250px;
+  margin-bottom: 10px;
+  fill: white; /* Works for SVG logos */
+}
+
+
+
+.logoSection p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.bottomFooter {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #111;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
+
+.bottomFooter p {
+  margin: 5px 0;
+}
+
+.bottomFooter a {
+  color: #f9c74f;
+  text-decoration: none;
+}
+
+.bottomFooter a:hover {
+  text-decoration: underline;
+}

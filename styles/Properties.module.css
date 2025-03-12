@@ -1,0 +1,120 @@
+.properties {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f5f6fa;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .loading {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .propertyCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 10px;
+  }
+  .properties {
+    padding: 0px;
+    text-align: center;
+    background: #f5f6fa; /* Light grey for the main page background */
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .loading {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .filters {
+    width: 25%;
+    padding: 20px;
+    background-color: #ffffff; /* Consistent white background for filters */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .filterItem {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .filterItem:hover {
+    cursor: pointer;
+  }
+  
+  .filterTitle {
+    font-size: 18px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    display: block;
+    width: 100%;
+    color: #2c3e50;
+  }
+  
+  .filterOptions {
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .filterOptions button {
+    background: none;
+    border: none;
+    padding: 8px 0;
+    color: #2c3e50;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  
+  .filterOptions button:hover {
+    color: #3498db; /* Highlight on hover */
+  }
+  
+  .arrow {
+    float: right;
+    font-size: 14px;
+  }
+  
+  .propertyCards {
+    width: 105%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    
+     /* White background for property cards */
+    
+    
+  }
+  
+  .propertyCards > p {
+    color: #7f8c8d; /* Neutral color for text like "No properties found" */
+  }

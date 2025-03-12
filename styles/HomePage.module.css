@@ -1,0 +1,605 @@
+/* Import slick-carousel styles */
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
+body{
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust for desktop */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroContainer {
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the hero section */
+  object-position: center center; /* Ensure the image is centered */
+  display: block;
+  
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  color: white;
+  max-width: 90%; /* Prevent text overflow */
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  animation: fadeInH1 1s ease-out;
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  animation: fadeInP 1.5s ease-out;
+}
+
+.heroContent button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  background-color:  rgb(10, 10, 10);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: bounceIn 2s ease-out;
+}
+
+.heroContent button:hover {
+  background-color: #0da0f5;
+  transform: scale(1.05);
+}
+/* Arrow Styles */
+.prevArrow, .nextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.prevArrow {
+  left: 10px;
+}
+
+.nextArrow {
+  right: 10px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero {
+    height: 50vh;
+    
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent p {
+    font-size: 1.2rem;
+  }
+
+  .heroContent button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .prevArrow, .nextArrow {
+    width: 35px; /* Reduce size for tablet */
+    height: 35px;
+  }
+
+  .prevArrow {
+    left: 5px;
+  }
+
+  .nextArrow {
+    right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+    
+  }
+  .heroContent {
+    top: 25%; /* Move the content closer to the top */
+    transform: translate(-50%, -35%); /* Adjust the vertical position */
+  }
+  .heroContent h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .heroContent button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+  .prevArrow, .nextArrow {
+    width: 30px; /* Further reduce size for mobile */
+    height: 30px;
+  }
+
+  .prevArrow {
+    left: 5px;
+  }
+
+  .nextArrow {
+    right: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .prevArrow, .nextArrow {
+    width: 25px; /* Even smaller for smaller mobile screens */
+    height: 25px;
+  }
+  .hero {
+    height: 35vh; /* Adjust height for smaller mobile screens */
+  }
+  .heroContent {
+    top: 30%; /* Move content even closer to the top */
+    transform: translate(-50%, -30%); /* Adjust the vertical position */
+  }
+
+  .heroContent h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+ 
+  }
+
+  .heroContent p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .heroContent button {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+}
+/* Animations */
+@keyframes fadeInH1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInP {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Featured Properties Section */
+.featuredProperties {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.featuredProperties h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 40px;
+  animation: futuristicTitle 1.5s ease-in-out;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Add futuristic glow and hover animations for property cards */
+.propertyList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.propertyCard {
+  background: linear-gradient(145deg, #283048, #859398);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.propertyCard img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+}
+
+.propertyCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffe600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.propertyCard p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.propertyCard:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.propertyCard:hover img {
+  transform: scale(1.1);
+}
+
+.propertyCard:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.propertyCard:hover:after {
+  opacity: 1;
+}
+
+/* Futuristic hover effect for buttons */
+.featuredProperties button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #ffe600, #ffc107);
+  color: #1e3c72;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.featuredProperties button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Futuristic Animations */
+@keyframes futuristicTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Search Section */
+.search {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.search h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin-top: 30px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.searchForm input {
+  padding: 15px 25px;
+  width: 350px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease;
+}
+
+.searchForm input:focus {
+  border-color: #28a745; /* Focus effect */
+}
+
+.searchForm button {
+  padding: 15px 25px;
+  background-color: #030303;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.searchForm button:hover {
+  background-color:#0da0f5;
+  transform: scale(1.05);
+}
+
+/* Responsive Design for Search Section */
+@media (max-width: 768px) {
+  .searchForm {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .searchForm input {
+    width: 80%;
+  }
+
+  .searchForm button {
+    width: 80%;
+  }
+}
+
+
+.whyUs {
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #1e3c72);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin: 30px 0;
+  border-radius: 15px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.whyUs h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.whyUs p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.whyUsPoints {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.point {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.point h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffe600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.point p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.point:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* About Us Section */
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.aboutUs .imageContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.aboutUs .imageContainer img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aboutUs .content {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.aboutUs .content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.aboutUs .content p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.aboutUs .content button {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aboutUs .content button:hover {
+  background-color:#0da0f5;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Add to HomePage.module.css */
+.scheduleButton {
+  background-color: #232627;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.scheduleButton:hover {
+  background-color: #444;
+}

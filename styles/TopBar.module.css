@@ -1,0 +1,38 @@
+.topBar {
+    display: flex;
+    justify-content: flex-end; /* Align all items to the right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1d1c1c;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #fcf7f7;
+    gap: 30px; /* Add spacing between contact info and social media */
+  }
+  
+  .contactInfo {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px; /* Add spacing between each contact info item */
+  }
+  @media (max-width: 768px) {
+    .topBar {
+      display: none; /* Hide the top bar in mobile view */
+    }
+  }
+  .socialMedia {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px; /* Add spacing between each social media icon */
+  }
+  
+  .socialMedia a {
+    color: #fffefe;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .socialMedia a:hover {
+    color: #007bff;
+  }
+  

@@ -1,0 +1,196 @@
+/* General Dashboard Styles */
+.dashboardContainer, .container {
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start; /* Aligns items to the left */
+}
+
+/* Header Styles (Welcome and Logout) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.welcomeMessage {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logoutButton {
+  background-color: #43798f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.logoutButton:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+/* Button Group Styles */
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-top: 60px; /* Adds space to separate the buttons from the welcome/logout */
+  width: 100%;
+}
+
+/* Individual Button Styles */
+.buttonGroup button, .submitButton, .deleteButton, .contactButton {
+  background-color: #43798f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover, .addButton:hover, .contactButton:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.deleteButton {
+  background-color: #ff4d4d;
+}
+
+.deleteButton:hover {
+  background-color: #e60000;
+  transform: translateY(-2px);
+}
+
+/* Property Card Styles */
+.propertyCard, .addPropertyForm, .propertyForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.propertyCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.propertyCard h3, .formWrapper h3, .title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Input Group Styles */
+.inputGroup input, .inputGroup textarea, .input {
+  padding:9px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 99%;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus, .inputGroup textarea:focus, .input:focus {
+  border-color: #4CAF50;
+  background-color: #fff;
+}
+
+.inputGroup textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* File Input Styles */
+.fileInput {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Image Preview Styles */
+.previewImage {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Loading Text Styles */
+.loading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+/* Time Filter Styles */
+.timeFilter {
+  margin-bottom: 20px;
+}
+
+.timeFilter select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .buttonGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .propertyCard {
+    padding: 15px;
+  }
+
+  .addButton, .submitButton, .deleteButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .dashboardContainer, .container {
+    padding: 10px;
+  }
+
+  .logoutButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addButton, .submitButton, .deleteButton {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .propertyCard h3, .propertyCard p {
+    font-size: 14px;
+  }
+}

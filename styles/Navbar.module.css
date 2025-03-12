@@ -1,0 +1,120 @@
+.navbar {
+  background-color: #ffffff;
+  color: white;
+  padding: 15px 20px; /* Reduced padding for smaller height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 60px; /* Reduced navbar height */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100p; /* Adjusted logo size */
+  height: auto; /* Keep the aspect ratio intact */
+  margin-right: 10px;
+}
+
+/* Desktop View (Min Width 1000px) */
+@media (min-width: 1000px) {
+  .logo img {
+    height: 80px; /* Slightly smaller logo for desktop */
+  }
+}
+
+/* Tablet View (Between 769px and 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .logo img {
+    height: 60px; /* Smaller logo for tablets */
+  }
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Reduced gap for a more compact layout */
+}
+
+.navLinks li a {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  font-size: 1.28rem; /* Reduced font size for a more compact look */
+  font-weight: 00;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #0da0f5;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 2%;
+    background-color: white; /* Adjust the background color */
+    height: 50px; /* Smaller height for mobile */
+  }
+
+  .logo img {
+    height: 40px; /* Adjust logo size for mobile */
+    margin: 15px 1px; /* Adjust margin for mobile */
+  }
+
+  .navLinks {
+    width: 100%;
+    height: auto;
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack links vertically */
+    padding: 25;
+    margin: 0px 1px;
+    background-color: white; /* Same as navbar for consistency */
+  }
+
+  .navLinks.active {
+    display: flex; /* Show the links when active */
+    position: absolute; /* Ensure it stays on top of other elements */
+    top: 0px; /* Adjust top to give some space below the navbar */
+    left: 0;
+    right: 0;
+  }
+  
+
+  .navToggle {
+    position: absolute; /* Allow precise positioning */
+    top: 10px; /* Adjust for vertical placement */
+    right: 20px; /* Align the toggle to the right */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+
+  .navToggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px; /* Spacing between lines */
+    background-color: rgb(1, 1, 1); /* Color of the lines */
+    transition: all 0.3s ease;
+  }
+
+  .navLinks li {
+    padding: 5px ; /* Add padding for links */
+    text-align: left; /* Align text to the left */
+  }
+
+  .navLinks li a {
+    color:black; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .navLinks li a:hover {
+    color: #007bff; /* Hover effect */
+  }
+}
