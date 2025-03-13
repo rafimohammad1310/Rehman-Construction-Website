@@ -35,9 +35,7 @@ const Navbar = () => {
         <li>
           <Link href="/contact">Contact Us</Link>
         </li>
-        <li>
-          <Link href="/admin-login">Login/Sign In</Link>
-        </li>
+       
       </ul>
     </nav>
   );
