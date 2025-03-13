@@ -10,6 +10,7 @@ import styles from "../styles/HomePage.module.css";
 import Link from "next/link";
 import Slider from "react-slick"; // Import React Slick for Carousel
 import ScheduleVisitPopup from "../components/ScheduleVisitPopup";
+
 const PrevArrow = ({ className, style, onClick }) => (
   <div
     className={`${className} ${styles.prevArrow}`}
@@ -103,9 +104,9 @@ export default function Home() {
       <section className={styles.hero}>
   <div className={styles.heroContainer}>
     <Slider {...settings}>
-      <SlideImage src="/hero1.webp" alt="Hero Image 1" className={styles.heroImage} />
-      <SlideImage src="/hero2.webp" alt="Hero Image 2" className={styles.heroImage} />
-      <SlideImage src="/hero3.webp" alt="Hero Image 3" className={styles.heroImage} />
+      <SlideImage src="https://rehman-construction-website-ncvi.vercel.app/hero1.webp" alt="Hero Image 1" className={styles.heroImage} />
+      <SlideImage src="https://rehman-construction-website-ncvi.vercel.app/hero2.webp" alt="Hero Image 2" className={styles.heroImage} />
+      <SlideImage src="https://rehman-construction-website-ncvi.vercel.app/hero3.webp" alt="Hero Image 3" className={styles.heroImage} />
     </Slider>
   </div>
   <div className={styles.heroContent}>
