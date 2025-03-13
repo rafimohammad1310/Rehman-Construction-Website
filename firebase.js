@@ -24,7 +24,7 @@ const storage = getStorage(app);
 
 let analytics;
 if (typeof window !== "undefined") {
-  analytics = getAnalytics(app);
+ // analytics = getAnalytics(app);
 }
 
 export { auth, db, storage, analytics };
