@@ -10,6 +10,9 @@ import styles from "../styles/HomePage.module.css";
 import Link from "next/link";
 import Slider from "react-slick"; // Import React Slick for Carousel
 import ScheduleVisitPopup from "../components/ScheduleVisitPopup";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const PrevArrow = ({ className, style, onClick }) => (
   <div
