@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { signInWithEmailAndPassword, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../firebase";
 import styles from "../styles/AdminDashboard.module.css";
+import Navbar from "../components/Navbar"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
